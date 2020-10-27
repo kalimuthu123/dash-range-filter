@@ -1,5 +1,8 @@
 const path = require('path');
 const packagejson = require('./package.json');
+const { WebpackPluginServe: Serve } = require('webpack-plugin-serve');
+
+const options = { "host" :"127.0.0.1" };
 
 const dashLibraryName = packagejson.name.replace(/-/g, '_');
 
@@ -44,6 +47,9 @@ module.exports = (env, argv) => {
     return {
         mode,
         entry,
+        plugins: [
+    new Serve(options)
+  ],
         output: {
             path: path.resolve(__dirname, dashLibraryName),
             filename,

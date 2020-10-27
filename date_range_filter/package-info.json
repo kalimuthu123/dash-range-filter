@@ -1,13 +1,13 @@
 {
   "name": "date_range_filter",
-  "version": "0.0.1",
+  "version": "0.0.1-a",
   "description": " pick the time filter and range filter",
   "repository": {
     "type": "git",
-    "url": "git://github.com/svayam/date-range-filter.git"
+    "url": "https://github.com/kalimuthu123/date_range_filter.git"
   },
   "bugs": {
-    "url": "https://github.com/svayam/date-range-filter/issues"
+    "url": "https://github.com/kalimuthu123/date_range_filter/issues"
   },
   "homepage": "https://github.com/svayam/date-range-filter",
   "main": "build/index.js",

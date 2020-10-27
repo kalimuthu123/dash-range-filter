@@ -3,7 +3,7 @@ module DateRangeFilter
 using Dash
 
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
-const version = "0.0.1"
+const version = "0.0.1-a"
 
 include("date_range_filter.jl")
 

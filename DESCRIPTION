@@ -1,13 +1,13 @@
 Package: dateRangeFilter
 Title:  pick the time filter and range filter
-Version: 0.0.1
+Version: 0.0.1-a
 Description:  pick the time filter and range filter
 Depends: R (>= 3.0.2)
 Imports: 
 Suggests: 
 License: MIT + file LICENSE
 URL: https://github.com/svayam/date-range-filter
-BugReports: https://github.com/svayam/date-range-filter/issues
+BugReports: https://github.com/kalimuthu123/date_range_filter/issues
 Encoding: UTF-8
 LazyData: true
 KeepSource: true

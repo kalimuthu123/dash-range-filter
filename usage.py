@@ -8,17 +8,17 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     date_range_filter.date_range_filter(
         id='input',
-        value='my-value',
-        label='my-label'
+        startDate='01-09-2020 00:00',
+        endDate='01-09-2020 10:06'
     ),
     html.Div(id='output')
 ])
 
 
-@app.callback(Output('output', 'children'), [Input('formControlsTextB', 'value')])
-def display_output(value):
-    print( )
-    return 'You have entered {}'.format(value)
+@app.callback(Output('output', 'children'), [Input('input', 'endDate'),Input('input', 'startDate')])
+def display_output(endDate,startDate):
+    print("value",endDate + startDate)
+    return 'You have entered {}'.format(endDate + "####################" + startDate)
 
 
 if __name__ == '__main__':
